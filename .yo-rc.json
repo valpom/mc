@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "mc",
+    "packageName": "com.valpom.mc",
+    "packageFolder": "com/valpom/mc",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "useCompass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "ac804328adeb742492df1a190141ac21317e9c3b"
+  }
+}
