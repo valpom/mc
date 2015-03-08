@@ -1,2 +1,2 @@
-# mc
-My mc project
+README for mc
+==========================

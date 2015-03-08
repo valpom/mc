@@ -1,4 +1,4 @@
-// Generated on 2015-02-22 using generator-jhipster 2.3.0
+// Generated on 2015-03-08 using generator-jhipster 2.5.2
 'use strict';
 var fs = require('fs');
 
@@ -61,8 +61,12 @@ module.exports = function (grunt) {
         wiredep: {
             app: {
                 src: ['src/main/webapp/index.html', 'src/main/scss/main.scss'],
-                exclude: [/angular-i18n/, /swagger-ui/],
-                ignorePath: /\.\.\/webapp\/bower_components\// // remove ../webapp/bower_components/ from paths of injected sass files
+                exclude: [
+                    /angular-i18n/, // localizations are loaded dynamically
+                    /swagger-ui/,
+                    'bower_components/bootstrap/' // Exclude Bootstrap LESS as we use bootstrap-sass
+                ],
+                ignorePath: /\.\.\/webapp\/bower_components\// // remove ../webapp/bower_components/ from paths of injected sass files 
             },
             test: {
                 src: 'src/test/javascript/karma.conf.js',
@@ -305,7 +309,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.html',
                         'scripts/**/*.html',
-                        'assets/images/**/*.{png,gif,webp}',
+                        'assets/images/**/*.{png,gif,webp,jpg,jpeg,svg}',
                         'assets/fonts/*'
                     ]
                 }, {

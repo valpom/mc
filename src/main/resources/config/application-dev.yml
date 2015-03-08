@@ -1,17 +1,16 @@
 server:
-    port: 8181
+    port: 8080
 
 spring:
     profiles:
         active: dev
-
     datasource:
         dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
-        url: jdbc:postgresql://localhost:5432/mescolos_dev
-        databaseName: mescolos_dev
+        url: 
+        databaseName: mc
         serverName: localhost
-        username: postgres
-        password: admin
+        username: mc
+        password: 
 
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQL82Dialect
